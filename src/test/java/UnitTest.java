@@ -27,6 +27,12 @@ public class UnitTest {
     assertEquals(true, testTriangle.isEquilateral());
   }
 
+  @Test
+  public void isIsosceles_twoSidesAreEqual_true() {
+    Triangle testTriangle = new Triangle (5,4,5);
+    assertEquals(true, testTriangle.isIsosceles());
+  }
+
   // @Test
   // public void isTriangle_sidesAreNotTriangle_false () {
   //   Triangle testTriangle = new Triangle(10,1,2) {

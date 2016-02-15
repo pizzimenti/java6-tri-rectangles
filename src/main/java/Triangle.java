@@ -37,4 +37,11 @@ public class Triangle {
     }
   }
 
+  public boolean isIsosceles() {
+    if((mSide1 == mSide2 || mSide2 == mSide3 || mSide3 == mSide1) && isTriangle() != isEquilateral()) {
+  } return true;
+  } else {
+    return false;
+}
+
 }
