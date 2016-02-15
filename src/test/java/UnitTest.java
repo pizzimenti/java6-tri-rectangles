@@ -15,6 +15,18 @@ public class UnitTest {
     assertEquals(true, testTriangle.isTriangle());
   }
 
+  @Test
+  public void isTriangle_sidesAreNotTriangle_false() {
+    Triangle testTriangle = new Triangle (10, 5, 1);
+    assertEquals(false, testTriangle.isTriangle());
+  }
+
+  @Test
+  public void isEquilateral_sidesAreAllEqual_true() {
+    Triangle testTriangle = new Triangle (5, 5, 5);
+    assertEquals(true, testTriangle.isTriangle());
+  }
+
   // @Test
   // public void isTriangle_sidesAreNotTriangle_false () {
   //   Triangle testTriangle = new Triangle(10,1,2) {

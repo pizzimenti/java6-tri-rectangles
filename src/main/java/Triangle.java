@@ -22,10 +22,10 @@ public class Triangle {
   }
 
   public boolean isTriangle() {
-    if(mSide1 + mSide2 > mSide3 || mSide2 + mSide3 > mSide1 || mSide3 + mSide1 > mSide2) {
-      return true;
-    } else {
+    if(mSide1 + mSide2 < mSide3 || mSide2 + mSide3 < mSide1 || mSide3 + mSide1 < mSide2) {
       return false;
+    } else {
+      return true;
     }
   }
 
