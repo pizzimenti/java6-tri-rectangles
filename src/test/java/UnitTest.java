@@ -3,6 +3,23 @@ import static org.junit.Assert.*;
 
 public class UnitTest {
 
+  @Test
+  public void newTriangle_instantiatesCorrectly() {
+    Triangle testTriangle = new Triangle (1,1,1);
+    assertEquals(true, testTriangle instanceof Triangle);
+  }
+
+  @Test
+  public void isTriangle_sidesAreTriangle_true() {
+    Triangle testTriangle = new Triangle (1,1,1);
+    assertEquals(true, testTriangle.isTriangle());
+  }
+
+  // @Test
+  // public void isTriangle_sidesAreNotTriangle_false () {
+  //   Triangle testTriangle = new Triangle(10,1,2) {
+  //   }
+  // }
 
   /*
   @Test
