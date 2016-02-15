@@ -17,13 +17,13 @@ public class App {
     get("/result", (request, response) -> {
 
       //call business logic functions here
-      int length = Integer.parseInt(request.queryParams("length"));
-      int width = Integer.parseInt(request.queryParams("width"));
-
-      Rectangle myRectangle = new Rectangle(length, width);
+          // int length = Integer.parseInt(request.queryParams("length"));
+          // int width = Integer.parseInt(request.queryParams("width"));
+          //
+          // Rectangle myRectangle = new Rectangle(length, width);
 
       HashMap model = new HashMap();
-      model.put("result", myRectangle);
+      // model.put("result", myRectangle);
       model.put("template", "templates/output.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());

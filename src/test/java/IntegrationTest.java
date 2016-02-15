@@ -20,9 +20,10 @@ public class IntegrationTest extends FluentTest {
   @Test
   public void rootTest() {
       goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("Square finder");
+      assertThat(pageSource()).contains("Triangle finder");
   }
 
+/*
   @Test
   public void squareTestisASquare() {
     goTo("http://localhost:4567/");
@@ -39,25 +40,6 @@ public class IntegrationTest extends FluentTest {
     fill("#width").with("5");
     submit(".btn");
     assertThat(pageSource()).contains("Your rectangle isn't a square!");
-  }
-
-
-
-  /*
-  @Test
-  public void getChange() {
-    goTo("http://localhost:4567");
-    fill("#userChange").with("87");
-    submit(".btn");
-    assertThat(pageSource()).contains("Your change for 87 cents is 3 quarters, 1 dime, 2 pennies.");
-  }
-  @Test
-  public void negativeNumber() {
-    goTo("http://localhost:4567");
-    fill("#userChange").with("-87");
-    submit(".btn");
-    assertThat(pageSource()).contains("Please enter a positive value");
-  }
-*/
+  } */
 
 }
