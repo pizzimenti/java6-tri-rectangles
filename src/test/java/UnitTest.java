@@ -24,7 +24,7 @@ public class UnitTest {
   @Test
   public void isEquilateral_sidesAreAllEqual_true() {
     Triangle testTriangle = new Triangle (5, 5, 5);
-    assertEquals(true, testTriangle.isTriangle());
+    assertEquals(true, testTriangle.isEquilateral());
   }
 
   // @Test

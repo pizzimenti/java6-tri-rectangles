@@ -29,4 +29,12 @@ public class Triangle {
     }
   }
 
+  public boolean isEquilateral() {
+    if(mSide1 == mSide2 && mSide2 == mSide3) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }
