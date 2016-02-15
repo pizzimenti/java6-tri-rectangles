@@ -38,10 +38,19 @@ public class Triangle {
   }
 
   public boolean isIsosceles() {
-    if((mSide1 == mSide2 || mSide2 == mSide3 || mSide3 == mSide1) && isTriangle() != isEquilateral()) {
-  } return true;
-  } else {
-    return false;
-}
+    if (this.isTriangle() == true && (mSide1 == mSide2 && mSide2 != mSide3 || mSide2 == mSide3 && mSide3 != mSide1 || mSide3 == mSide1 && mSide1 != mSide2)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public boolean isScalene() {
+    if(this.isTriangle() == true && mSide1 != mSide2 && mSide2 != mSide3) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
 }

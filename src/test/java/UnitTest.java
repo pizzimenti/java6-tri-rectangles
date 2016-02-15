@@ -29,8 +29,14 @@ public class UnitTest {
 
   @Test
   public void isIsosceles_twoSidesAreEqual_true() {
-    Triangle testTriangle = new Triangle (5,4,5);
+    Triangle testTriangle = new Triangle (8,9,9);
     assertEquals(true, testTriangle.isIsosceles());
+  }
+
+  @Test
+  public void isScalene_noSidesAreEqual_true() {
+    Triangle testTriangle = new Triangle (1, 2, 3);
+    assertEquals(true, testTriangle.isScalene());
   }
 
   // @Test
