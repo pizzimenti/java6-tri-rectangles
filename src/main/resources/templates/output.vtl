@@ -1,0 +1,24 @@
+<h1></h1>
+<h2>Result:</h2>
+<h3>Your rectangle's length is $result.getLength()</h3>
+<h3>Your rectangle's width is $result.getWidth()</h3>
+
+
+#if ($result.isSquare())
+  <p>
+    <h3>Your rectangle is a square!</h3>
+  </p>
+#else
+<p>
+  <h3>Your rectangle isn't a square!</h3>
+</p>
+#end
+
+
+
+<button class="btn btn-info" onclick="goBack()">Go Back</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
